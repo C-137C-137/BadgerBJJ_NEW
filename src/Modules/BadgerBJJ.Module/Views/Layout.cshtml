@@ -1,0 +1,55 @@
+@inherits OrchardCore.DisplayManagement.Razor.RazorPage<TModel>
+<!DOCTYPE html>
+<html lang="@Orchard.CultureName()">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@RenderTitleSegments("BadgerBJJ")</title>
+    @await RenderSectionAsync("HeadMeta", required: false)
+    <resources type="Meta" />
+    <resources type="HeadLink" />
+    <resources type="Stylesheet" />
+    <resources type="HeadScript" />
+    <link rel="stylesheet" href="~/BadgerBJJ.Theme/css/styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" asp-area="BadgerBJJ.Module" asp-controller="Home" asp-action="Index">BadgerBJJ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="BadgerBJJ.Module" asp-controller="Home" asp-action="Index">Index</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="BadgerBJJ.Module" asp-controller="Schedule" asp-action="Schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="BadgerBJJ.Module" asp-controller="About" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="BadgerBJJ.Module" asp-controller="Contact" asp-action="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-section">
+        @await RenderBodyAsync()
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; @DateTime.Now.Year - BadgerBJJ. All rights reserved</p>
+        </div>
+    </footer>
+
+    <resources type="FootScript" />
+</body>
+</html>

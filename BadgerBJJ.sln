@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D1978E78-C555-43FC-AB9E-364FA3A52392}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgerBJJ.Web", "src\BadgerBJJ.Web\BadgerBJJ.Web.csproj", "{8A582CE4-E28C-4969-9827-362B774F126D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{3E412683-4041-45B5-8A1A-7F3C803CA289}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgerBJJ.Module", "src\Modules\BadgerBJJ.Module\BadgerBJJ.Module.csproj", "{C1E36081-DE9A-4632-A0E8-051F808CFCAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Themes", "Themes", "{D4BFA47E-8B01-4A74-98B5-1866A9E938AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgerBJJ.Theme", "src\Themes\BadgerBJJ.Theme\BadgerBJJ.Theme.csproj", "{10DD498C-CF23-422E-9A39-3C3AEBF76D10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A582CE4-E28C-4969-9827-362B774F126D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A582CE4-E28C-4969-9827-362B774F126D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A582CE4-E28C-4969-9827-362B774F126D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A582CE4-E28C-4969-9827-362B774F126D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1E36081-DE9A-4632-A0E8-051F808CFCAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1E36081-DE9A-4632-A0E8-051F808CFCAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1E36081-DE9A-4632-A0E8-051F808CFCAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1E36081-DE9A-4632-A0E8-051F808CFCAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10DD498C-CF23-422E-9A39-3C3AEBF76D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10DD498C-CF23-422E-9A39-3C3AEBF76D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10DD498C-CF23-422E-9A39-3C3AEBF76D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DD498C-CF23-422E-9A39-3C3AEBF76D10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A582CE4-E28C-4969-9827-362B774F126D} = {D1978E78-C555-43FC-AB9E-364FA3A52392}
+		{3E412683-4041-45B5-8A1A-7F3C803CA289} = {D1978E78-C555-43FC-AB9E-364FA3A52392}
+		{C1E36081-DE9A-4632-A0E8-051F808CFCAC} = {3E412683-4041-45B5-8A1A-7F3C803CA289}
+		{D4BFA47E-8B01-4A74-98B5-1866A9E938AA} = {D1978E78-C555-43FC-AB9E-364FA3A52392}
+		{10DD498C-CF23-422E-9A39-3C3AEBF76D10} = {D4BFA47E-8B01-4A74-98B5-1866A9E938AA}
+	EndGlobalSection
+EndGlobal

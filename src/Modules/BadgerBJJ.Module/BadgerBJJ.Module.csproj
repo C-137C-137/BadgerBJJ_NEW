@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lombiq.HelpfulExtensions" Version="9.0.0" />
+    <PackageReference Include="Lombiq.HelpfulLibraries.OrchardCore" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Localization" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.TagHelpers" Version="2.2.0" />
+    <PackageReference Include="OrchardCore" Version="2.1.2" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="2.1.2" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="2.1.2" />
+    <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="2.1.2" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="2.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\Home\Index.cshtml">
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

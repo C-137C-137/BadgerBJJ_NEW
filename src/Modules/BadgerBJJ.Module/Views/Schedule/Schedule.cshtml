@@ -1,0 +1,59 @@
+
+<div class="card mb-3">
+    @if (Model.DateTime != null)
+    {
+        <div class="card-header">
+            @await DisplayAsync(Model.DateTime)
+        </div>
+    }
+
+    @if (Model.Instructor != null)
+    {
+        <div class="mb-2">
+            @await DisplayAsync(Model.Instructor)
+        </div>
+    }
+
+    @if (Model.ClassType != null)
+    {
+        <div class="mb-2">
+            @await DisplayAsync(Model.ClassType)
+        </div>
+    }
+
+    @if (Model.MaxParticipants != null)
+    {
+        <div class="mb-2">
+            @await DisplayAsync(Model.MaxParticipants)
+        </div>
+    }
+
+    @if (Model.CurrentParticipants != null)
+    {
+        <div class="mb-2">
+            @await DisplayAsync(Model.CurrentParticipants)
+        </div>
+    }
+
+    @if (Model.Status != null)
+    {
+        <div class="card-footer">
+            @await DisplayAsync(Model.Status)
+        </div>
+    }
+
+
+    <a asp-action="DisplayDemoSchedule" asp-area="BadgerBJJ.Module" class="viewBookDescriptionLink">@T["Register for Class"]</a>
+</div>
+
+
+@* @{
+    Layout = "Layout.cshtml";
+}
+
+
+<div class="schedule-page">
+    <h2 class="page-title">Shedule</h2>
+    <!-- Rest of content -->
+</div> *@
+<
